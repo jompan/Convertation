@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>km/h</key>
+	<integer>1</integer>
+	<key>mph</key>
+	<real>1.609344</real>
+	<key>knot</key>
+	<real>1.852</real>
+	<key>ft/h</key>
+	<real>0.000305</real>
+	<key>ft/min</key>
+	<real>0.018288</real>
+	<key>ft/s</key>
+	<real>1.09728</real>
+	<key>yd/h</key>
+	<real>0.000914</real>
+	<key>yd/min</key>
+	<real>0.054864</real>
+	<key>yd/s</key>
+	<real>3.29184</real>
+</dict>
+</plist>

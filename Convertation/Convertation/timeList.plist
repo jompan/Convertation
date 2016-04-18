@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Hours</key>
+	<integer>1</integer>
+	<key>Days</key>
+	<integer>24</integer>
+	<key>Weeks</key>
+	<integer>168</integer>
+	<key>Years</key>
+	<real>8765</real>
+	<key>Minute</key>
+	<real>0.016667</real>
+	<key>Second</key>
+	<real>0.000278</real>
+</dict>
+</plist>

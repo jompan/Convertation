@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>KiloBytes</key>
+	<integer>1</integer>
+	<key>Bit</key>
+	<real>0.000122</real>
+	<key>Byte</key>
+	<real>0.000977</real>
+	<key>MegaBytes</key>
+	<integer>1024</integer>
+	<key>GigaBytes</key>
+	<integer>1048576</integer>
+	<key>TeraBytes</key>
+	<integer>1073741824</integer>
+	<key>PetaBytes</key>
+	<integer>1099511627776</integer>
+</dict>
+</plist>

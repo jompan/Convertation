@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,13 +19,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y4Z-gf-tUw">
-                                <rect key="frame" x="8" y="158" width="600" height="216"/>
-                            </pickerView>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="He2-zz-gkh">
-                                <rect key="frame" x="57" y="184" width="131" height="138"/>
+                                <rect key="frame" x="23" y="238" width="120" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="131" id="LAV-g6-14h"/>
+                                    <constraint firstAttribute="width" constant="120" id="LAV-g6-14h"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="2Ce-uU-hNM"/>
@@ -32,15 +30,52 @@
                                 </connections>
                             </pickerView>
                             <pickerView tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ePN-z4-2Qi">
-                                <rect key="frame" x="196" y="184" width="131" height="138"/>
+                                <rect key="frame" x="183" y="239" width="120" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="131" id="ANE-gH-mIC"/>
+                                    <constraint firstAttribute="width" constant="120" id="ANE-gH-mIC"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="E0a-19-qbj"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="EKW-hm-da9"/>
                                 </connections>
                             </pickerView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter an amount" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="d7Q-eM-qhT">
+                                <rect key="frame" x="23" y="74" width="141" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="141" id="V7d-zN-b5x"/>
+                                </constraints>
+                                <color key="textColor" red="0.17271190359306657" green="0.15592641542001981" blue="0.92978614267676774" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="go"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yue-Ib-WMp">
+                                <rect key="frame" x="351" y="74" width="55" height="30"/>
+                                <state key="normal" title="Convert">
+                                    <color key="titleColor" red="0.92978614267676774" green="0.12108746802246048" blue="0.068223678855762943" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="convert" destination="BYZ-38-t0r" eventType="touchUpInside" id="2SL-76-DGK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtC-ep-Y5F">
+                                <rect key="frame" x="23" y="397" width="302" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="302" id="uW7-XP-hyK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWJ-lJ-Nrq">
+                                <rect key="frame" x="79" y="124" width="55" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="bka-Tb-VXO"/>
+                                </constraints>
+                                <state key="normal" title="Weight"/>
+                                <connections>
+                                    <action selector="weightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="asu-pT-TgJ"/>
+                                </connections>
+                            </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bPM-O6-s3V">
                                 <rect key="frame" x="241" y="184" width="176" height="138"/>
                                 <constraints>
@@ -54,24 +89,79 @@
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u0W-rn-kQH">
                                 <rect key="frame" x="85" y="179" width="600" height="216"/>
                             </pickerView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y4Z-gf-tUw">
+                                <rect key="frame" x="8" y="158" width="600" height="216"/>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bOQ-S2-SHA">
+                                <rect key="frame" x="0.0" y="244" width="73" height="138"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="138" id="vlf-rb-93s"/>
+                                </constraints>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a81-l8-5Ju">
+                                <rect key="frame" x="86" y="124" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Qc7-Yo-tk5"/>
+                                </constraints>
+                                <state key="normal" title="Weight"/>
+                                <connections>
+                                    <action selector="lengthButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oVQ-q1-QEt"/>
+                                    <action selector="tester:" destination="BYZ-38-t0r" eventType="touchUpInside" id="afv-5C-5OJ"/>
+                                    <action selector="weightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qZo-Gp-hdk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARX-q6-ZKe">
+                                <rect key="frame" x="23" y="124" width="55" height="30"/>
+                                <state key="normal" title="Length"/>
+                                <connections>
+                                    <action selector="lengthButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kML-42-rt7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ePN-z4-2Qi" firstAttribute="leading" secondItem="He2-zz-gkh" secondAttribute="trailing" constant="8" symbolic="YES" id="1kc-kv-fpn"/>
-                            <constraint firstItem="He2-zz-gkh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="164" id="HUg-d1-MNS"/>
-                            <constraint firstItem="He2-zz-gkh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="37" id="LFQ-Nc-abU"/>
-                            <constraint firstItem="ePN-z4-2Qi" firstAttribute="bottom" secondItem="He2-zz-gkh" secondAttribute="bottom" id="WAX-Bk-kcH"/>
-                            <constraint firstItem="ePN-z4-2Qi" firstAttribute="top" secondItem="He2-zz-gkh" secondAttribute="top" id="h22-xi-oKA"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="He2-zz-gkh" secondAttribute="bottom" constant="278" id="htT-tC-6sO"/>
+                            <constraint firstItem="ePN-z4-2Qi" firstAttribute="leading" secondItem="He2-zz-gkh" secondAttribute="trailing" constant="40" id="1kc-kv-fpn"/>
+                            <constraint firstItem="gtC-ep-Y5F" firstAttribute="top" secondItem="bOQ-S2-SHA" secondAttribute="bottom" constant="15" id="5jO-Bg-6xb"/>
+                            <constraint firstItem="He2-zz-gkh" firstAttribute="leading" secondItem="bOQ-S2-SHA" secondAttribute="trailing" constant="50" id="Dlu-Ri-3v5"/>
+                            <constraint firstItem="a81-l8-5Ju" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="66" id="EhT-QH-kuQ"/>
+                            <constraint firstItem="He2-zz-gkh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="218" id="HUg-d1-MNS"/>
+                            <constraint firstItem="ARX-q6-ZKe" firstAttribute="baseline" secondItem="a81-l8-5Ju" secondAttribute="baseline" id="Kzd-ZU-M30"/>
+                            <constraint firstItem="He2-zz-gkh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="3" id="LFQ-Nc-abU"/>
+                            <constraint firstItem="KWJ-lJ-Nrq" firstAttribute="top" secondItem="d7Q-eM-qhT" secondAttribute="bottom" constant="20" id="OdS-V1-prz"/>
+                            <constraint firstItem="d7Q-eM-qhT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="54" id="Puf-3z-Nf1"/>
+                            <constraint firstItem="gtC-ep-Y5F" firstAttribute="leading" secondItem="d7Q-eM-qhT" secondAttribute="leading" id="Szg-eQ-zHk"/>
+                            <constraint firstItem="Yue-Ib-WMp" firstAttribute="top" secondItem="d7Q-eM-qhT" secondAttribute="top" id="TUZ-1O-VKy"/>
+                            <constraint firstItem="ePN-z4-2Qi" firstAttribute="bottom" secondItem="He2-zz-gkh" secondAttribute="bottom" constant="1" id="WAX-Bk-kcH"/>
+                            <constraint firstItem="d7Q-eM-qhT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="3" id="WVe-yN-h26"/>
+                            <constraint firstItem="Yue-Ib-WMp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="78.5" id="XWV-mm-kuM"/>
+                            <constraint firstItem="KWJ-lJ-Nrq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="79" id="axL-Rf-EMo"/>
+                            <constraint firstItem="KWJ-lJ-Nrq" firstAttribute="leading" secondItem="ARX-q6-ZKe" secondAttribute="trailing" constant="1" id="be0-oe-OMt"/>
+                            <constraint firstItem="bOQ-S2-SHA" firstAttribute="centerY" secondItem="He2-zz-gkh" secondAttribute="centerY" constant="-0.5" id="dRh-Uk-giP"/>
+                            <constraint firstItem="KWJ-lJ-Nrq" firstAttribute="baseline" secondItem="ARX-q6-ZKe" secondAttribute="baseline" id="dWh-np-sUl"/>
+                            <constraint firstItem="bOQ-S2-SHA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="g3K-JD-TVK"/>
+                            <constraint firstItem="ePN-z4-2Qi" firstAttribute="top" secondItem="He2-zz-gkh" secondAttribute="top" constant="1" id="h22-xi-oKA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="He2-zz-gkh" secondAttribute="bottom" constant="212" id="htT-tC-6sO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gtC-ep-Y5F" secondAttribute="bottom" constant="161" id="ie8-FM-1eE"/>
+                            <constraint firstItem="a81-l8-5Ju" firstAttribute="top" secondItem="d7Q-eM-qhT" secondAttribute="bottom" constant="20" id="kgZ-BT-bjg"/>
+                            <constraint firstItem="ARX-q6-ZKe" firstAttribute="leading" secondItem="d7Q-eM-qhT" secondAttribute="leading" id="mTA-FO-QFH"/>
+                            <constraint firstItem="a81-l8-5Ju" firstAttribute="leading" secondItem="ARX-q6-ZKe" secondAttribute="trailing" constant="8" symbolic="YES" id="q52-YY-9E0"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="y4Z-gf-tUw"/>
                                 <exclude reference="bPM-O6-s3V"/>
                                 <exclude reference="u0W-rn-kQH"/>
+                                <exclude reference="y4Z-gf-tUw"/>
+                                <exclude reference="bOQ-S2-SHA"/>
+                                <exclude reference="a81-l8-5Ju"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="lblResult" destination="gtC-ep-Y5F" id="Qu5-bW-5UD"/>
+                        <outlet property="pvUnitFrom" destination="He2-zz-gkh" id="GaN-st-eIl"/>
+                        <outlet property="pvUnitTo" destination="ePN-z4-2Qi" id="Fjo-c4-G75"/>
+                        <outlet property="txtAmount" destination="d7Q-eM-qhT" id="TsS-Va-DAb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

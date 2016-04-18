@@ -14,7 +14,12 @@
 		0CC156951CBFC7F4006F9239 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC156931CBFC7F4006F9239 /* LaunchScreen.storyboard */; };
 		0CC156A01CBFC7F5006F9239 /* ConvertationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC1569F1CBFC7F5006F9239 /* ConvertationTests.swift */; };
 		0CC156AB1CBFC7F5006F9239 /* ConvertationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC156AA1CBFC7F5006F9239 /* ConvertationUITests.swift */; };
-		0CC156B91CBFC9EF006F9239 /* unitsList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CC156B81CBFC9EF006F9239 /* unitsList.plist */; };
+		0CC156B91CBFC9EF006F9239 /* lengthList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CC156B81CBFC9EF006F9239 /* lengthList.plist */; };
+		0CC156BB1CC50319006F9239 /* weightList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CC156BA1CC50319006F9239 /* weightList.plist */; };
+		0CC156BD1CC5137B006F9239 /* timeList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CC156BC1CC5137B006F9239 /* timeList.plist */; };
+		0CC156BF1CC51392006F9239 /* heatList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CC156BE1CC51392006F9239 /* heatList.plist */; };
+		0CC156C11CC513A3006F9239 /* speedList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CC156C01CC513A3006F9239 /* speedList.plist */; };
+		0CC156C31CC513C5006F9239 /* bitList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CC156C21CC513C5006F9239 /* bitList.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +53,12 @@
 		0CC156A61CBFC7F5006F9239 /* ConvertationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConvertationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CC156AA1CBFC7F5006F9239 /* ConvertationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertationUITests.swift; sourceTree = "<group>"; };
 		0CC156AC1CBFC7F5006F9239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0CC156B81CBFC9EF006F9239 /* unitsList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = unitsList.plist; sourceTree = "<group>"; };
+		0CC156B81CBFC9EF006F9239 /* lengthList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = lengthList.plist; sourceTree = "<group>"; };
+		0CC156BA1CC50319006F9239 /* weightList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = weightList.plist; sourceTree = "<group>"; };
+		0CC156BC1CC5137B006F9239 /* timeList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = timeList.plist; sourceTree = "<group>"; };
+		0CC156BE1CC51392006F9239 /* heatList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = heatList.plist; sourceTree = "<group>"; };
+		0CC156C01CC513A3006F9239 /* speedList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = speedList.plist; sourceTree = "<group>"; };
+		0CC156C21CC513C5006F9239 /* bitList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bitList.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +111,12 @@
 			children = (
 				0CC1568A1CBFC7F4006F9239 /* AppDelegate.swift */,
 				0CC1568C1CBFC7F4006F9239 /* ViewController.swift */,
-				0CC156B81CBFC9EF006F9239 /* unitsList.plist */,
+				0CC156B81CBFC9EF006F9239 /* lengthList.plist */,
+				0CC156BA1CC50319006F9239 /* weightList.plist */,
+				0CC156BC1CC5137B006F9239 /* timeList.plist */,
+				0CC156BE1CC51392006F9239 /* heatList.plist */,
+				0CC156C01CC513A3006F9239 /* speedList.plist */,
+				0CC156C21CC513C5006F9239 /* bitList.plist */,
 				0CC1568E1CBFC7F4006F9239 /* Main.storyboard */,
 				0CC156911CBFC7F4006F9239 /* Assets.xcassets */,
 				0CC156931CBFC7F4006F9239 /* LaunchScreen.storyboard */,
@@ -232,10 +247,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CC156B91CBFC9EF006F9239 /* unitsList.plist in Resources */,
+				0CC156BF1CC51392006F9239 /* heatList.plist in Resources */,
+				0CC156B91CBFC9EF006F9239 /* lengthList.plist in Resources */,
 				0CC156951CBFC7F4006F9239 /* LaunchScreen.storyboard in Resources */,
 				0CC156921CBFC7F4006F9239 /* Assets.xcassets in Resources */,
+				0CC156BD1CC5137B006F9239 /* timeList.plist in Resources */,
 				0CC156901CBFC7F4006F9239 /* Main.storyboard in Resources */,
+				0CC156C31CC513C5006F9239 /* bitList.plist in Resources */,
+				0CC156C11CC513A3006F9239 /* speedList.plist in Resources */,
+				0CC156BB1CC50319006F9239 /* weightList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +508,7 @@
 				0CC156B11CBFC7F5006F9239 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0CC156B21CBFC7F5006F9239 /* Build configuration list for PBXNativeTarget "ConvertationTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +517,7 @@
 				0CC156B41CBFC7F5006F9239 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0CC156B51CBFC7F5006F9239 /* Build configuration list for PBXNativeTarget "ConvertationUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +526,7 @@
 				0CC156B71CBFC7F5006F9239 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
