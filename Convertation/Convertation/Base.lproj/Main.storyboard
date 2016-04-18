@@ -117,9 +117,41 @@
                                     <action selector="lengthButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kML-42-rt7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IPp-fd-nhW">
+                                <rect key="frame" x="133" y="124" width="55" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="Ket-g1-MxJ"/>
+                                </constraints>
+                                <state key="normal" title="Time"/>
+                                <connections>
+                                    <action selector="timeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ExA-1q-weP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sp2-Ch-6OK">
+                                <rect key="frame" x="188" y="124" width="88" height="30"/>
+                                <state key="normal" title="Temperature"/>
+                                <connections>
+                                    <action selector="heatButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IvN-JS-NtC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yte-uH-hys">
+                                <rect key="frame" x="23" y="162" width="55" height="30"/>
+                                <state key="normal" title="Speed"/>
+                                <connections>
+                                    <action selector="speedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SQC-dz-bgy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u50-Wk-wQQ">
+                                <rect key="frame" x="86" y="162" width="55" height="30"/>
+                                <state key="normal" title="Bit/Byte"/>
+                                <connections>
+                                    <action selector="bitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ypB-Bf-0cV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="IPp-fd-nhW" firstAttribute="baseline" secondItem="KWJ-lJ-Nrq" secondAttribute="baseline" id="1A1-PG-Yr2"/>
                             <constraint firstItem="ePN-z4-2Qi" firstAttribute="leading" secondItem="He2-zz-gkh" secondAttribute="trailing" constant="40" id="1kc-kv-fpn"/>
                             <constraint firstItem="gtC-ep-Y5F" firstAttribute="top" secondItem="bOQ-S2-SHA" secondAttribute="bottom" constant="15" id="5jO-Bg-6xb"/>
                             <constraint firstItem="He2-zz-gkh" firstAttribute="leading" secondItem="bOQ-S2-SHA" secondAttribute="trailing" constant="50" id="Dlu-Ri-3v5"/>
@@ -128,6 +160,7 @@
                             <constraint firstItem="ARX-q6-ZKe" firstAttribute="baseline" secondItem="a81-l8-5Ju" secondAttribute="baseline" id="Kzd-ZU-M30"/>
                             <constraint firstItem="He2-zz-gkh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="3" id="LFQ-Nc-abU"/>
                             <constraint firstItem="KWJ-lJ-Nrq" firstAttribute="top" secondItem="d7Q-eM-qhT" secondAttribute="bottom" constant="20" id="OdS-V1-prz"/>
+                            <constraint firstItem="IPp-fd-nhW" firstAttribute="leading" secondItem="ARX-q6-ZKe" secondAttribute="trailing" constant="55" id="Ona-YG-abb"/>
                             <constraint firstItem="d7Q-eM-qhT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="54" id="Puf-3z-Nf1"/>
                             <constraint firstItem="gtC-ep-Y5F" firstAttribute="leading" secondItem="d7Q-eM-qhT" secondAttribute="leading" id="Szg-eQ-zHk"/>
                             <constraint firstItem="Yue-Ib-WMp" firstAttribute="top" secondItem="d7Q-eM-qhT" secondAttribute="top" id="TUZ-1O-VKy"/>
